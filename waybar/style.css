@@ -56,7 +56,9 @@ button:hover {
 #workspaces {
   padding: 1px 10px;
   background-color: #073642;
+  border: 2px solid #073642;
   border-bottom: 2px solid #cb4b16;
+  border-top: 2px solid #cb4b16;
   border-radius: 20px;
 }
 
@@ -64,8 +66,10 @@ button:hover {
   padding: 0 0px;
   margin: 1px;
   background-color: #174652;
+  border: 2px solid #174652;
   border-radius: 15;
   font-size: 0px;
+  color: #586e75;
 }
 
 #workspaces button:hover {
@@ -74,12 +78,14 @@ button:hover {
 
 #workspaces button.active {
   border-bottom: 2px solid #586e75;
+  border-top: 2px solid #586e75;
   border-radius: 15;
   padding: 0 4;
 }
 
 #workspaces button.urgent {
     border-bottom: 2px solid #dc322f;
+    border-top: 2px solid #dc322f;
 }
 
 #mode {
@@ -124,31 +130,37 @@ button:hover {
 }
 
 #clock {
+  border: 2px solid #002b36;
   border-bottom: 2px solid  #64727D;
+  border-top: 2px solid  #64727D;
   background-color: #002b36;
 }
 
 #battery {
+    border: 2px solid #073642;
     background-color: #073642;
     border-bottom: 2px solid #eee8d5;
+    border-top: 2px solid #eee8d5;
     color: #eee8d5;
 }
 
 #battery.charging, #battery.plugged {
     border-bottom: 2px solid #859900;
+    border-top: 2px solid #859900;
     color: #eee8d5;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+      border-bottom: 2px solid #b58900;
+      border-top: 2px solid #b58900;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     border-bottom: 2px solid #dc322f;
+    border-top: 2px solid #dc322f;
     background-color: #073642;
     color: #eee8d5;
     animation-name: blink;
@@ -163,19 +175,25 @@ button:hover {
 }
 
 #power-profiles-daemon.performance {
+  border: 2px solid #073642;
   border-bottom: 2px solid #dc322f;
+  border-top: 2px solid #dc322f;
   background-color: #073642;
   color: #eee8d5;
 }
 
 #power-profiles-daemon.balanced {
+  border: 2px solid #073642;
   border-bottom: 2px solid #268bd2;
+  border-top: 2px solid #268bd2;
   background-color: #073642;
   color: #eee8d5;
 }
 
 #power-profiles-daemon.power-saver {
+  border: 2px solid #073642;
   border-bottom: 2px solid #859900;
+  border-top: 2px solid #859900;
   background-color: #073642;
   color: #eee8d5;
 }
@@ -185,14 +203,18 @@ label:focus {
 }
 
 #cpu {
+  border: 2px solid #073642;
   border-bottom: 2px solid #859900;
-    background-color: #073642;
-    color: #eee8d5;
+  border-top: 2px solid #859900;
+  background-color: #073642;
+  color: #eee8d5;
 }
 
 #memory {
+  border: 2px solid #073642;
   border-bottom: 2px solid #d33682;
-    background-color: #073642;
+  border-top: 2px solid #d33682;
+  background-color: #073642;
 }
 
 #disk {
@@ -200,14 +222,18 @@ label:focus {
 }
 
 #backlight {
+  border: 2px solid #073642;
   border-bottom: 2px solid #93a1a1;
+  border-top: 2px solid #93a1a1;
   background-color: #073642;
   color: #eee8d5;
 }
 
 #network {
-    border-bottom: 2px solid #268bd2;
-    background-color: #073642;
+  border: 2px solid #073642;
+  border-bottom: 2px solid #268bd2;
+  border-top: 2px solid #268bd2;
+  background-color: #073642;
 }
 
 #network.disconnected {
@@ -216,9 +242,11 @@ label:focus {
 }
 
 #pulseaudio {
+  border: 2px solid #073642;
   border-bottom: 2px solid #b58900;
-    background-color: #073642;
-    color: #eee8d5;
+  border-top: 2px solid #b58900;
+  background-color: #073642;
+  color: #eee8d5;
 }
 
 #pulseaudio.muted {
@@ -271,13 +299,13 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #073642;
-    color: #eee8d5;
+  background-color: #073642;
+  color: #eee8d5;
 }
 
 #idle_inhibitor.activated {
-    background-color: #eee8d5;
-    color: #073642;
+  background-color: #eee8d5;
+  color: #073642;
 }
 
 #mpd {
