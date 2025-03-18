@@ -1,0 +1,43 @@
+* {
+  border-radius: 20px;
+  border: none;
+}
+#window {
+  background-color: #002b36;
+  border: solid 2px #cb4b16;
+  border-radius: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 20px;
+  font-family: "Hurmit Nerd Font";
+  color: white;
+}
+#input { /* name of search bar */
+  background-color: #657b83;
+  color: white;
+  border: solid 2px #cb4b16;
+  border-radius: 10px;
+}
+#inner-box { /* box that contains all entries */
+  background-color: #001b26;
+  border: solid 2px #cb4b16;
+  border-radius: 10px;
+  margin: 20px 60px;
+  padding: 10px;
+}
+#entry {
+  padding: 0.25em;
+}
+#entry:selected { /* name of all entries */
+  background-color: #657b83;
+  border: 2px solid #cb4b16;
+  border-radius: 10px;
+}
+#text:selected {
+  color: white;
+}
+#img {
+  background: white;
+  border: solid 5px white;
+  border-radius: 10px;
+}

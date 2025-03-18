@@ -1,0 +1,5 @@
+show=drun
+width=750
+height=250
+allow_images=true
+stylesheet=./style.css
