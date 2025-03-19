@@ -230,22 +230,26 @@ label:focus {
 }
 
 #network {
+  background-color: #073642;
   border: 2px solid #073642;
   border-bottom: 2px solid #268bd2;
   border-top: 2px solid #268bd2;
-  background-color: #073642;
+  color: #eee8d5;
 }
 
 #network.disconnected {
-    border-bottom: 2px solid #dc322f;
-    background-color: #073642;
+  background-color: #073642;
+  border: 2px solid #073642;
+  border-bottom: 2px solid #dc322f;
+  border-top: 2px solid #dc322f;
+  color: #eee8d5;
 }
 
 #pulseaudio {
+  background-color: #073642;
   border: 2px solid #073642;
   border-bottom: 2px solid #b58900;
   border-top: 2px solid #b58900;
-  background-color: #073642;
   color: #eee8d5;
 }
 
@@ -278,11 +282,19 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+  background-color: #073642;
+  border: 2px solid #073642;
+  border-bottom: 2px solid #859900;
+  border-top: 2px solid #859900;
+  color: #eee8d5;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+  background-color: #073642;
+  border: 2px solid #073642;
+  border-bottom: 2px solid #dc322f;
+  border-top: 2px solid #dc322f;
+  color: #eee8d5;
 }
 
 #tray {
