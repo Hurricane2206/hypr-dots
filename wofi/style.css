@@ -35,6 +35,7 @@
 }
 #text:selected {
   color: white;
+  background-color: transparent;
 }
 #img {
   background: white;
