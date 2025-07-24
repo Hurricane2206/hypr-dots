@@ -1,0 +1,83 @@
+window.bar {
+  /* background-color: #0a1e24; */
+  background: #0a1e24;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 30, 36, 1) 0%,
+    rgba(10, 30, 36, 0) 100%
+  );
+  font-family: "Hurmit Nerd Font";
+}
+box.left {
+  background-color: #1a2e34;
+  border-bottom: 2px solid #33ccff;
+  border-right: 2px solid #33ccff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+box.date {
+  background-color: #638794;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #1a2e34;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-left: 8px;
+}
+box.dico {
+  color: #638794;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+box.center {
+  background-color: #1a2e34;
+  border-bottom: 2px solid #33ccff;
+  border-left: 2px solid #33ccff;
+  border-right: 2px solid #33ccff;
+  border-radius: 20px;
+}
+box.rc {
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 20px;
+  color: #638794;
+}
+box.lc {
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-left: 20px;
+  color: #638794;
+}
+box.right {
+  background-color: #1a2e34;
+  border-bottom: 2px solid #33ccff;
+  border-left: 2px solid #33ccff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #0a1e24;
+}
+box.bico {
+  padding-right: 8px;
+  padding-left: 10px;
+  color: #638794;
+}
+box.batt {
+  background-color: #638794;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 10px;
+  padding-right: 7px;
+  padding-top: 3px;
+}
+button {
+  border: 0px solid transparent;
+  border-radius: 20px;
+  background-image: none;
+  background-color: #638794;
+  font-size: 15px;
+  box-shadow: none;
+  text-shadow: none;
+  color: #0a1e24;
+  padding-left: 7px;
+  padding-right: 9px;
+}

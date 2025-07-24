@@ -1,0 +1,76 @@
+(defwindow bar
+  :monitor 0
+  :geometry (geometry
+    :x "0%"
+    :y "0%"
+    :width "100%"
+    :height "25px"
+    :anchor "top center"
+  )
+  :stacking "bg"
+  :exclusive true
+  :reserve (struts :distance "40px" :side "top")
+  :windowtype "dock"
+  :wm-ignore false
+  (bar
+    (info_l)
+    (info_c)
+    (info_r)
+  )
+)
+(defwidget bar []
+  (box (children))
+)
+(defwidget info_r []
+  (box
+    :class "right"
+    :orientation "horizontal"
+    :space-evenly false
+    :halign "end"
+    (box :class "bico" "󰁹")
+    (box :class "batt" battlvl)
+  )
+)
+(defwidget info_c []
+  (box
+    :class "center"
+    :orientation "horizontal"
+    :space-evenly false
+    :halign "center"
+    (box :class "lc" hyprwsp)
+    (button
+      :onclick "wofi --show drun &" "󰣇"
+    )
+    (box :class "rc" time)
+  )
+)
+(defwidget info_l []
+  (box
+    :class "left"
+    :orientation "horizontal"
+    :space-evenly false
+    :halign "start"
+    (box :class "date" date)
+    (box :class "dico" "")
+  )
+)
+(defpoll time
+  :interval "1s"
+  :initial "initial-value"
+  `date +%l:%M:%S' '%p`
+)
+(defpoll date
+  :interval "600s"
+  :initial "initial-value"
+  `date +%b' '%e' '%Y`
+)
+(defpoll hyprwsp
+  :interval "100ms"
+  :initial "initial-value"
+  `hyprctl activeworkspace | awk '{print $3}' | sed -n '1p'`
+)
+(defpoll battlvl
+  :interval "100ms"
+  :initial "initial-value"
+  `echo $(cat /sys/class/power_supply/BAT1/capacity)%`
+)
